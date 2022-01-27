@@ -471,101 +471,174 @@ a {
   }
 }
 
-.why {
-  margin-top: 200px;
-  margin-bottom: 355px;
+.hero {
+  margin-bottom: 130px;
 }
 
-.why__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 100px;
-  border-radius: 8px;
-  background-color: #293039;
+.hero__container {
+  background-image: url(./../images/great-coffee.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 117px;
+  padding-left: 85px;
+  padding-bottom: 116px;
+  border-radius: 10px;
 }
 
-.why__heading {
-  margin-bottom: 32px;
+.hero__wrapper {
+  display: inline-block;
+}
+
+.hero__heading {
+  max-width: 493px;
+  width: 100%;
   font-family: 'Fraunces';
+  font-style: normal;
   font-weight: 900;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 72px;
+  line-height: 72px;
   color: #FEFCF7;
+  margin-bottom: 32px;
 }
 
-.why__text {
-  max-width: 540px;
-  margin-bottom: 86px;
-  font-family: Barlow;
+.hero__text {
+  max-width: 440px;
+  width: 100%;
+  font-family: 'Barlow';
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  text-align: center;
   color: #FEFCF7;
+  mix-blend-mode: normal;
   opacity: 0.8;
-}
-
-.why__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.why__item {
-  padding: 72px 48px 48px 47px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #0E8784;
-  border-radius: 8px;
-  margin-bottom: -155px;
-}
-
-.why__item + .why__item {
-  margin-left: 30px;
-}
-
-.why__image {
   margin-bottom: 56px;
 }
 
-.why__item--heading {
-  margin-bottom: 24px;
-  font-family: Fraunces;
+.hero__btn {
+  display: inline-block;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  background-color: #0E8784;
+  padding: 15px 31px;
+  border-radius: 6px;
+}
+
+.hero__btn:hover {
+  background-color: #66D2CF;
+}
+
+@media only screen and (max-width: 860px) {
+  .hero__container {
+    padding-top: 104px;
+    padding-left: 58px;
+    padding-bottom: 104px;
+  }
+  .hero__heading {
+    max-width: 329px;
+    width: 100%;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    max-width: 398px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero__container {
+    padding: 100px 24px;
+  }
+  .hero__wrapper {
+    text-align: center;
+  }
+  .hero__heading {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .hero__text {
+    margin-bottom: 38px;
+    text-align: center;
+  }
+  .hero__btn {
+    text-align: center;
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+}
+
+.collect {
+  margin-bottom: 180px;
+}
+
+.collect__container {
+  max-width: 1110px;
+  border: 1px solid blue;
+}
+
+.collect__heading {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 72px;
+  text-align: center;
+  color: #7e8b9c;
+  opacity: 0.2;
+  padding: 86px 18px 38px 18px;
+  margin-bottom: -70px;
+}
+
+.collect__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collect__item {
+  text-align: center;
+}
+
+.collect__item + .collect__item {
+  margin-left: 25px;
+}
+
+.collect__img {
+  margin-bottom: 67px;
+}
+
+.collect__heading-inner {
+  font-family: 'Fraunces';
+  font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 32px;
-  color: #FEFCF7;
+  color: #333D4B;
+  margin-bottom: 24px;
 }
 
-.why__item--text {
+.collect__text {
   max-width: 255px;
-  font-family: Barlow;
+  width: 100%;
+  font-family: 'Barlow';
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
-  color: #FEFCF7;
-  text-align: center;
+  color: #333D4B;
 }
 /*# sourceMappingURL=main.css.map */
