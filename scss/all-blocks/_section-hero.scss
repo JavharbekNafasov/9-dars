@@ -1,0 +1,117 @@
+
+.hero {
+    margin-bottom: 130px;
+
+    &__container {
+        background-image: url(./../images/great-coffee.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-top: 117px;
+        padding-left: 85px;
+        padding-bottom: 116px;
+        border-radius: 10px;
+    }
+    &__wrapper {
+        display: inline-block;
+    }
+    &__heading {
+        max-width: 493px;
+        width: 100%;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: $LightCreamBG;
+        margin-bottom: 32px;
+    }
+    &__text {
+        max-width: 440px;
+        width: 100%;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: $LightCreamBG;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        margin-bottom: 56px;
+    }
+    &__btn {
+        display: inline-block;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        color: $LightCreamBG;
+        background-color: $DarkCyan;
+        padding: 15px 31px;
+        border-radius: 6px;
+    }
+    &__btn:hover {
+        background-color: #66D2CF;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .hero {
+
+    &__container {
+        padding-top: 104px;
+        padding-left: 58px;
+        padding-bottom: 104px;
+    }
+
+    &__heading {
+        max-width: 329px;
+        width: 100%;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        max-width: 398px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 25px;
+        margin-bottom: 40px;
+    }
+}
+}
+
+@media only screen and (max-width: 500px) {
+    .hero {
+
+    &__container {
+        padding: 100px 24px;
+    }
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__heading {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 38px;
+        text-align: center;
+    }
+
+    &__btn {
+        text-align: center;
+        font-size: 16px;
+        padding: 6px 20px;
+    }
+}
+}

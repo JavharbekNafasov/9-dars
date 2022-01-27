@@ -1,0 +1,47 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: 'Barlow', 'Fraunces', sans-serif;   
+    background-color: $LightCreamBG;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    min-width: 300px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-right: 20px;
+    // padding-left: 20px;
+}
+
+
+
