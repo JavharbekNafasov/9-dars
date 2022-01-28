@@ -5,8 +5,8 @@
     &__container {
         max-width: 1110px;
         border: 1px solid blue;
-
     }
+
     &__heading {
         font-family: 'Fraunces';
         font-style: normal;
@@ -19,18 +19,23 @@
         padding: 86px 18px 38px 18px;
         margin-bottom: -70px;
     }
+
     &__list {
         display: flex;
     }
+
     &__item {
         text-align: center;
     }
+
     &__item + &__item {
         margin-left: 25px;
     }
+
     &__img {
         margin-bottom: 67px;
     }
+
     &__heading-inner {
         font-family: 'Fraunces';
         font-style: normal;
@@ -40,6 +45,7 @@
         color: $DarkGreyBlue;
         margin-bottom: 24px;
     }
+    
     &__text {
         max-width: 255px;
         width: 100%;

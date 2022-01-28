@@ -10,44 +10,44 @@
         align-items: center;
         justify-content: center;
         padding-top: 100px;
-        border-radius: 8px;
-        background-color: #293039 ;
+        padding-left: 85px;
+        padding-right: 85px;
+        border-radius: 10px;
+        background-color: $DarkGreyBlue;
     }
 
     &__heading{
-        margin-bottom: 32px;
         font-family: 'Fraunces';
         font-weight: 900;
         font-size: 40px;
         line-height: 48px;
-        color: #FEFCF7;
+        color: $LightCreamBG;
+        margin-bottom: 32px;
     }
 
     &__text{
         max-width: 540px;
-        margin-bottom: 86px;
-        font-family: Barlow;
+        font-family: 'Barlow';
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
-        text-align: center;
-        color: #FEFCF7;
+        color: $LightCreamBG;
         opacity: 0.8;
+        text-align: center;
+        margin-bottom: 86px;
     }
 
     &__list{
+        width: 100%;
         display: flex;
+        margin-bottom: -155px;
     }
 
     &__item{
-        padding: 72px 48px 48px 47px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #0E8784;
+        text-align: center;
+        padding: 72px 47px 47px 48px;
+        background-color: $DarkCyan;
         border-radius: 8px;
-        margin-bottom: -155px;
     }
 
     &__item + &__item{
@@ -60,20 +60,151 @@
 
     &__item--heading{
         margin-bottom: 24px;
-        font-family: Fraunces;
+        font-family: 'Fraunces';
         font-weight: 900;
         font-size: 24px;
         line-height: 32px;
-        color: #FEFCF7;
+        color: $LightCreamBG;
     }
 
     &__item--text{
         max-width: 255px;
-        font-family: Barlow;
+        font-family: 'Barlow';
         font-weight: normal;
         font-size: 16px;
         line-height: 26px;
-        color: #FEFCF7;
+        color: $LightCreamBG;
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .why {
+
+		&__container {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            padding-left: 55px;
+            padding-right: 55px;
+		}
+
+		&__heading {
+            font-size: 32px;
+            margin-bottom: 24px;
+		}
+
+		&__text {
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 70px;
+		}
+
+		&__list {
+            display: block;
+            max-width: 600px;
+            width: 100%;
+            margin-bottom: 0;
+
+		}
+
+		&__item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 41px 48px 41px 70px;
+		}
+
+        &__item + &__item{
+            margin-left: 0;
+            margin-top: 24px;
+        }
+
+		&__image {
+            width: 55px;
+            height: 55px;
+            margin-bottom: 0;
+		}
+
+        &__item-wrapper {
+            max-width: 345px;
+            width: 100%;
+            text-align: left;
+            margin-left: 15px;
+        }
+
+		&__item--heading {
+            margin-bottom: 16px;
+            font-weight: 900;
+		}
+
+		&__item--text {
+            max-width: none;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: left;
+		}
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .why {
+
+		&__container {
+            padding-top: 64px;
+            padding-left: 24px;
+            padding-right: 24px;
+		}
+
+		&__heading {
+            font-size: 28px;
+            line-height: 28px;
+            margin-bottom: 24px;
+		}
+
+		&__text {
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 65px;
+		}
+
+		&__list {
+            display: block;
+            max-width: none;
+
+		}
+
+		&__item {
+            display: block;
+            padding: 72px 33px 51px 33px;
+		}
+
+        &__item + &__item{
+            margin-left: 0;
+            margin-top: 24px;
+        }
+
+		&__image {
+            width: 55px;
+            height: 55px;
+            margin-bottom: 56px;
+		}
+
+        &__item-wrapper {
+            max-width: none;
+            width: 100%;
+            text-align: center;
+            margin-left: 0;
+        }
+
+		&__item--heading {
+            margin-bottom: 24px;
+		}
+
+		&__item--text {
+            max-width: none;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+		}
     }
 }
