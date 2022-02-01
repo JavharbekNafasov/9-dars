@@ -1,0 +1,131 @@
+.view {
+  margin-bottom: 160px;
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__card1 {
+    max-width: 540px;
+    width: 100%;
+    background-image: url(./../images/bgimg-web.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 273px;
+    padding-bottom: 273px;
+    border-radius: 15px;
+    margin-right: 24px;
+  }
+  
+  &__card1:hover {
+    opacity: 0.8;
+  }
+  
+  &__card-wrapper {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+  }
+  
+  &__heading {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    color: $white;
+    margin-bottom: 24px;
+  }
+  
+  &__text {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  
+  &__card2 {
+    max-width: 540px;
+    width: 100%;
+  }
+  
+  &__card2-1{
+    background-image: url(./../images/bgimg-app.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 107px;
+    padding-bottom: 107px;
+    border-radius: 15px;
+    margin-bottom: 24px;
+  }
+  &__card2-1:hover {
+    opacity: 0.8;
+  }
+  
+  &__card2-2{
+    background-image: url(./../images/bgimg-graphic.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 107px;
+    padding-bottom: 107px;
+    border-radius: 15px;
+  }
+  &__card2-2:hover {
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .view {
+    
+    &__container {
+      display: block;
+    }
+    
+    &__card1 {
+      max-width: none;
+      padding-top: 53px;
+      padding-bottom: 53px;
+      margin-bottom: 24px;
+    }
+    
+    &__card1:hover {
+    }
+    
+    &__card-wrapper {
+    }
+    
+    &__heading {
+    }
+    
+    &__text {
+    }
+    
+    &__card2 {
+      max-width: none;
+    }
+    
+    &__card2-1{
+      padding-top: 53px;
+      padding-bottom: 53px;
+    }
+    &__card2-1:hover {
+    }
+    
+    &__card2-2{
+      padding-top: 53px;
+      padding-bottom: 53px;
+    }
+    
+    &__card2-2:hover {
+    }
+  }
+}
